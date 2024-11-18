@@ -1,0 +1,80 @@
+.card {
+    margin-bottom: 20px; 
+}
+.pagination {
+    justify-content: center; 
+}
+span{
+    color: #777777;
+    font-weight: bold;
+}
+
+
+
+
+
+
+.header {
+position: relative;
+height: 600px; 
+overflow: hidden; 
+}
+
+.background-video {
+position: absolute; 
+top: 0;
+left: 0;
+width: 100%;
+height: 100%; 
+z-index: -1; 
+}
+
+.background-video video {
+width: 100%; 
+height: 100%; 
+object-fit: cover;
+}
+
+.content {
+position: relative;
+z-index: 1; 
+color: white; 
+text-align: center;
+padding: 20px;
+display: flex; 
+flex-direction: column; 
+justify-content: center; 
+height: 100%; 
+}
+
+
+.pagination .active .page-link {
+background-color: white; 
+color:blue; 
+}
+
+
+.card {
+    
+    border-radius: 10px;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+
+
+.btn-outline-primary {
+    border-color: #007bff;
+}
+
+.btn-outline-primary:hover {
+    background-color: #007bff;
+    color: white;
+}

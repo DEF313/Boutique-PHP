@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouveau Produit</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    
+    <style>
+      
+        .i {
+            box-shadow: 800px 800px 800px black;
+            width: 500px;
+        }
+
+        .header{
+            box-shadow: 800px 800px 800px black;
+            height: 60px;
+           
+        
+        }
+        .header img , .header h7{
+            position: absolute;
+            top : 10px;
+            right: 5%;
+        }
+        .header img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            right: 2%;
+            top:2px;
+        }
+        h7{
+            margin-right: 22px;
+            opacity: 0.5;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header shadow-lg">
+        <h7>DEFALEOUNA Tchassama Dessoklema</h7>
+        <img src="src/profile-pic-blank-facebook-profile.jpg" alt="">
+    </div>
+    <div class="container vh-100 d-flex justify-content-center align-items-center ">
+        <div class="form-container p-4 rounded shadow-lg border-opacity-75 i ">
+            <form class="form-container" action="Create.php"  enctype="multipart/form-data" method="post">
+                <h2 class="text-center mb-4">Ajouter un produit</h2>
+                
+                
+    
+                <!-- Email input -->
+                <div class="form-outline mb-3 position-relative">
+                    <i class="fas fa-envelope position-absolute" style="left: 10px; top: 12px;"></i>
+                    <input type="text" id="form3Example3" name="libelle" class="form-control fw-bold" spellcheck="false" autocomplete="off" required placeholder="Libelle" />
+                </div>
+               
+    
+                <!-- Password input -->
+                <div class="form-outline mb-3 ">
+                    <input type="number" id="myInput" name="prix" class="form-control mb-2 fw-bold" spellcheck="false" autocomplete="off" required placeholder="Prix en FCFA" />
+                </div>
+                <div class="form-outline mb-3 ">
+                    <input type="number" id="myInput" name="quantite" class="form-control mb-2 fw-bold" spellcheck="false" autocomplete="off" required placeholder="quantité" />
+                </div>
+                <div class="form-outline mb-3 ">
+                    <textarea type="text" id="myInput" name="description" class="form-control mb-2 fw-bold" spellcheck="false" autocomplete="off" required placeholder="Ajoutez un description du produit"></textarea>
+                </div>
+                <div class="form-outline mb-3 ">
+                    <input type="file" id="myInput" name="fichier" class="form-control mb-2 fw-bold" required accept="image/*"/>
+                </div>
+    
+    
+                <!-- Submit button -->
+                <button type="submit" name="valider" class="btn btn-primary btn-block mb-3">Ajouter</button>
+                <p class="fs-12">Non j'annule <a href="admin.php">Revenir a l'acceuil</a></p>
+               
+            </form>
+        </div>
+       
+    </div>
+    
+ <script src="bootstrap/js/bootstrap.min.js"></script>
+ <script>
+    let cards = document.getElementsByClassName('card-body');
+    console.log(cards);
+    cards.forEach(element => {
+        console.log(element)
+        
+    });
+ </script>
+ 
+</body>
+</html>
